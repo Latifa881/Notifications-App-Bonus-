@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         btShowNotification.setOnClickListener {
             val timer = object: CountDownTimer(5000, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
-                    tvCounter.setText((millisUntilFinished/1000).toString())
+                    tvCounter.setText((millisUntilFinished/1000+1).toString())
                 }
                 override fun onFinish() {
                     tvCounter.setText("")
